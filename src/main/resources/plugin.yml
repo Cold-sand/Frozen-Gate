@@ -1,0 +1,12 @@
+name: MaterialLogin
+version: 0.1
+main: top.coldsand.materiallogin.MaterialLogin
+api-version: 1.19
+
+commands:
+  login:
+    usage: "/login YOUR_PASSWORD"
+    description: "Login your account."
+  register:
+    usage: "/register YOUR_PASSWORD"
+    description: "Register your account."
