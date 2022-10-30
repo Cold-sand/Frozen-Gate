@@ -60,15 +60,18 @@ public class LoginCommand implements Listener, CommandExecutor {
             p.sendMessage("你已经登录了！");
             return;
         }
-        if (LoginManager.isRegister(p.getName())) {
-            p.sendMessage("你已经登录了！");
+        if (LoginManager.isRegister(p.getName().toLowerCase())) {
+            p.sendMessage("你已经注册了！");
             return;
         }
         if (args.length != 1) {
             p.sendMessage(ChatColor.RED + "注册指令使用错误！");
             return;
         }
-        LoginManager.register(p.getName(), args[0]);
+
+        String key = args[0].trim();
+
+        LoginManager.register(p.getName().toLowerCase() , key);
         p.sendMessage(ChatColor.GREEN + "注册成功！请登录！");
     }
 }
