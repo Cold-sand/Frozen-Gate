@@ -1,15 +1,15 @@
-package top.coldsand.materiallogin;
+package top.coldsand.frozengate;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
-import top.coldsand.materiallogin.command.LoginCommand;
-import top.coldsand.materiallogin.event.LoginListener;
-import top.coldsand.materiallogin.event.TipListener;
+import top.coldsand.frozengate.command.LoginCommand;
+import top.coldsand.frozengate.event.LoginListener;
+import top.coldsand.frozengate.event.TipListener;
 
 
-public final class MaterialLogin extends JavaPlugin {
+public final class FrozenGate extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic 插件启动

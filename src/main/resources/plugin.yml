@@ -1,6 +1,6 @@
-name: MaterialLogin
+name: FrozenGate
 version: 0.1
-main: top.coldsand.materiallogin.MaterialLogin
+main: top.coldsand.frozengate.FrozenGate
 api-version: 1.19
 
 commands:
